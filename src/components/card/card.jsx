@@ -34,24 +34,20 @@ export const Card = () =>
 
                 }}>Срок действия
                 </div>
-                <input onChange={() => {
-                }} type="text" name="month" list={"month"} className="inputsItem inputsItemSmall"/>
-                <datalist id="month">
+                <select id="month" className="inputsItem inputsItemSmall">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
-                </datalist>
-                <input onChange={() => {
-                }} type="text" name="year" list={"year"} className="inputsItem inputsItemSmall"/>
-                <datalist id="year">
+                </select>
+                <select id="year" className="inputsItem inputsItemSmall">
                     <option value="2018">2018</option>
                     <option value="2019">2019</option>
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
-                </datalist>
+                </select>
             </div>
             <div className="inputs">
                 <input type="text" placeholder="Держатель карты" className="inputsItem"/>
