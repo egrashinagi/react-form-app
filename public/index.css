@@ -1,13 +1,9 @@
-body, html {
-    max-width: 600px;
-}
-
-.form {
+.card {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    height: 300px;
-    width: 400px;
+    max-width: 350px;
+    min-width: 300px;
     padding: 20px;
     border: 1px solid #e4e9ee;
     border-radius: 6px;
@@ -17,45 +13,7 @@ body, html {
     font-family: Arial, SansSerif, Tahoma;
 }
 
-.form_botton {
-
-    top: 30px;
-    left: -130px;
-
-    z-index: 2;
-    position: fixed;
-}
-
-.form_slip {
-    position: relative;
-}
-
-.form_top {
-    position: relative;
-    z-index: 3;
-}
-
-.form__title {
-    display: flex;
-    align-items: flex-start;
-
-    padding: 0 10px 10px 0;
-
-    color: #010101;
-    /*font-weight: bold;*/
-    font-size: 25px;
-}
-
-.inputs__title {
-    display: flex;
-    align-items: flex-start;
-    padding: 0 10px 10px 0;
-    color: #a7b2c1;
-    font-weight: 100;
-    font-size: 16px;
-}
-
-.inputs__item {
+.inputsItem {
     height: 40px;
 
     border: 1px solid #e4e9ee;
@@ -64,41 +22,53 @@ body, html {
     width: 308px;
     font-size: 14px;
     color: #353535;
-    text-align: center;
+    text-align: left;
+    padding-left: 5px;
 
     margin: 10px 10px 10px 0;
 }
 
-.inputs__item_small {
+.inputsItemSmall {
     width: 65px;
 }
 
-.card_ccv {
-    height: 300px;
-    z-index: -1;
-    position: fixed;
-    left: 40%;
-    top: 5%;
-}
-
-.inputs__item_middle {
+.inputsItemMiddle {
     width: 120px;
 }
 
-.inputs_ccv {
+.inputs {
+    margin-bottom: 10px;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+:focus::-moz-placeholder {
+    color: transparent
+}
+
+:focus:-moz-placeholder {
+    color: transparent
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+.inputsItemWidthXl {
+     width: 137px;
+
+     content: url('./q.png');
+ }
+
+.inputsCcv {
     display: none;
 }
 
-.card_ccv .inputs,
-.card_ccv .form__title {
-    visibility: hidden;
-}
-
-.card_ccv .inputs_ccv {
-    display: flex;
-    flex-direction: column;
-}
-
-.inputs__item_middle {
-    display: flex;
-}
+input::placeholder {
+     color: #b8b8b8;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
