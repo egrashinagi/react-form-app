@@ -1,7 +1,8 @@
 import React from 'react';
 import {CardNumber} from './card-number.jsx';
 import {CardDate} from './card-date.jsx';
-import {CardUser} from './card-user';
+import {CardUser} from './card-user.jsx';
+import {CardCode} from './card-code.jsx'
 
 export const Card = () =>
     <form style={{
@@ -17,9 +18,7 @@ export const Card = () =>
             backgroundColor: '#f7f8f8',
 
             fontFamily: 'Arial, SansSerif, Tahoma'
-        }
-
-    }>
+        }}>
         <div style={{
             display: 'flex',
             flexDirection: 'column'
@@ -32,18 +31,7 @@ export const Card = () =>
                <CardUser/>
             </div>
             <div className="inputs inputsCcv">
-                <div style={{
-                    display: 'flex',
-                    alignItems: 'flex-start',
-                    padding: '0 10px 10px 0',
-                    color: '#a7b2c1',
-                    fontWeight: '100',
-                    fontSize: '16px'
-
-                }}>CCV/CVC2 код
-                </div>
-                <input type="password" placeholder="CCV/CVС2"
-                       className="inputsItem inputsItemMiddle inputsItemWidthXl"/>
+                <CardCode/>
             </div>
         </div>
     </form>;
