@@ -10,7 +10,10 @@ const cardCodeStyle = {
 };
 
 export const CardCode = () =>
-    (<React.Fragment>
-        <div style={cardCodeStyle}>CCV/CVC2 код</div>
-        <input type="password" placeholder="CCV/CVС2"/>
-    </React.Fragment>);
+        <div style={{
+            display: 'flex',
+            flexDirection: 'column'
+        }}>
+            <div style={cardCodeStyle}>CCV/CVC2 код</div>
+            <input type="password" placeholder="CCV/CVС2"/>
+        </div>;

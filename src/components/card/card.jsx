@@ -19,19 +19,9 @@ export const Card = () =>
 
             fontFamily: 'Arial, SansSerif, Tahoma'
         }}>
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column'
-        }}>
+
             <CardNumber />
-            <div className="inputs">
-                <CardDate/>
-            </div>
-            <div className="inputs">
-               <CardUser/>
-            </div>
-            <div className="inputs inputsCcv">
-                <CardCode/>
-            </div>
-        </div>
+            <CardDate />
+            <CardUser />
+            <CardCode />
     </form>;

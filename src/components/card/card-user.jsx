@@ -1,6 +1,9 @@
 import React from 'react';
 
 export const CardUser = () =>
-    (<React.Fragment>
+        <div style= {{
+            display: 'flex',
+            flexDirection: 'column'
+        }}>
             <input type="text" placeholder="Держатель карты"/>
-    </React.Fragment>);
+        </div>;
