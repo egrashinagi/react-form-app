@@ -1,6 +1,7 @@
 import React from 'react';
-import {CardNumber} from './card-number.jsx'
-import {CardDate} from './card-date.jsx'
+import {CardNumber} from './card-number.jsx';
+import {CardDate} from './card-date.jsx';
+import {CardUser} from './card-user';
 
 export const Card = () =>
     <form style={{
@@ -28,7 +29,7 @@ export const Card = () =>
                 <CardDate/>
             </div>
             <div className="inputs">
-                <input type="text" placeholder="Держатель карты" className="inputsItem"/>
+               <CardUser/>
             </div>
             <div className="inputs inputsCcv">
                 <div style={{
