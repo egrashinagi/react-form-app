@@ -1,5 +1,6 @@
 import React from 'react';
 import {CardNumber} from './card-number.jsx'
+import {CardDate} from './card-date.jsx'
 
 export const Card = () =>
     <form style={{
@@ -24,30 +25,7 @@ export const Card = () =>
         }}>
             <CardNumber />
             <div className="inputs">
-                <div style={{
-                    display: 'flex',
-                    alignItems: 'flex-start',
-                    padding: '0 10px 10px 0',
-                    color: '#a7b2c1',
-                    fontWeight: '100',
-                    fontSize: '16px'
-
-                }}>Срок действия
-                </div>
-                <select id="month" className="inputsItem inputsItemSmall">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <select id="year" className="inputsItem inputsItemSmall">
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                </select>
+                <CardDate/>
             </div>
             <div className="inputs">
                 <input type="text" placeholder="Держатель карты" className="inputsItem"/>
