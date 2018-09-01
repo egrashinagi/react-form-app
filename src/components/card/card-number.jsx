@@ -13,9 +13,10 @@ const cardNumberTitleStyle = {
 
 export const CardNumber = () =>
     (<React.Fragment>
-        <div style={cardNumberTitleStyle}>Номер карты
+        <div style={cardNumberTitleStyle}>
+            Номер карты
         </div>
-        <div className="inputs">
+        <div>
             <CardNumberInput placeholder="1234"/>
             <CardNumberInput placeholder="5678"/>
             <CardNumberInput placeholder="9012"/>
