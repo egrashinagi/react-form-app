@@ -30,7 +30,7 @@ const cardBottomStyle = {
     alignItems: 'flex-end',
     zIndex: 10,
     top: 30,
-    left: 150
+    left: 160
 };
 
 export const Card = () =>

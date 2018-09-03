@@ -2,6 +2,7 @@ import React from 'react';
 
 const cardNumberInputStyle = {
     height: 40,
+    width: 320,
     border: '1px solid #e4e9ee',
     borderRadius: 3,
     outlineStyle: 'none',

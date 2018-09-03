@@ -3,7 +3,7 @@ import React from 'react';
 const cardCodeStyle = {
     display: 'flex',
     alignItems: 'flex-start',
-    padding: '0 10px 10px 0',
+    padding: '20px 10px 0 10px',
     color: '#a7b2c1',
     fontWeight: '100',
     fontSize: '16px'
@@ -11,7 +11,7 @@ const cardCodeStyle = {
 
 const cardNumberInputStyle = {
     height: 40,
-    width: 80,
+    width: 100,
     border: '1px solid #e4e9ee',
     borderRadius: 3,
     outlineStyle: 'none',
@@ -20,11 +20,12 @@ const cardNumberInputStyle = {
     textAlign: 'left',
     paddingLeft: 5,
     margin: '10px 10px 10px 0'
+
 };
 
 export const CardCcv = () =>
     <React.Fragment>
-        <div style={{backgroundColor: 'gray', width: 200, height: 50, marginRight: -20}}/>
+        <div style={{backgroundColor: '#E4E9EE', width: 200, height: 40, marginRight: -20, marginTop: 10}}/>
         <div style={cardCodeStyle}>CCV/CVC2 код</div>
         <input style={cardNumberInputStyle} type="password"/>
     </React.Fragment>;
